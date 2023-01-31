@@ -30,7 +30,8 @@
   list-style: none;
   column-gap: 25px;
 }
-.listitem-nav {
+.listitem-nav:link,
+.listitem-nav:visited {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -39,8 +40,13 @@
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.02em;
-
   color: #1b0a42;
+  transition: 0.2s;
+}
+.listitem-nav:hover,
+.listitem-nav:active {
+  color: #4f56f1;
+  text-decoration: underline;
 }
 .container-btn {
   justify-self: end;
@@ -59,6 +65,12 @@
   border: none;
   background-color: #fff;
   color: #1b0a42;
+  transition: 0.2s;
+}
+.btn1-nav:hover {
+  text-decoration: underline;
+  color: #4f56f1;
+  cursor: pointer;
 }
 .btn2-nav {
   width: 120px;
@@ -76,6 +88,13 @@
   background: #4f56f1;
   border-radius: 6px;
   border: none;
+  transition: 0.9s;
+}
+.btn2-nav:hover {
+  color: #1b0a42;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 2px #b9bbf9;
 }
 
 /*Main*/
@@ -125,7 +144,15 @@
   border-radius: 6px;
   border: none;
   align-self: start;
+  transition: 0.9s;
 }
+.btn-main:hover {
+  color: #1b0a42;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 2px #b9bbf9;
+}
+
 .img-main {
   width: 590px;
   height: 580px;
